@@ -12,7 +12,7 @@ const Banner = () => {
   useGSAP(() => {
     const timeLine = gsap.timeline();
     timeLine.to(".banner_main", {
-      backgroundColor: "#070707b0",
+      backgroundColor: "#07070700",
       backdropFilter: "blur(1px)",
       duration: 2.5,
       ease: "power1.out",
@@ -25,15 +25,16 @@ const Banner = () => {
     });
 
     timeLine.to(headTittle.current, {
-      scale: 3,
-      opacity: 0,
-      duration: 3,
+      scale: 2,
+      //   opacity: 0,
+      y: -900,
+      ease: "power1.out",
       scrollTrigger: {
         trigger: headTittle.current,
-        scrub: 1,
-        start: "10% top",
-        end: "bottom bottom",
         pin: headTittle.current,
+        scrub: 1,
+        start: "5% top",
+        // end: "bottom bottom",
       },
     });
 
