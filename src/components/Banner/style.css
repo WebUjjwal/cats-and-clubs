@@ -23,11 +23,20 @@
   text-align: center;
   /* overflow: hidden; */
   position: absolute;
+  font-family: "Metamorphous";
   transform: translate(-50%, -50%);
 }
 
 .banner_overlay .content h2 {
   color: #fff;
-  font-size: 8vw;
-  text-transform: capitalize;
+  font-size: 6vw;
+
+  text-transform: uppercase;
+}
+
+.banner_overlay .content p {
+  color: #fff;
+  font-size: 20px;
+
+  text-transform: uppercase;
 }

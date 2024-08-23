@@ -59,6 +59,7 @@ const Banner = () => {
 
         <div className="content">
           <h2 ref={headTittle}>Cats Club & Bar</h2>
+          {/* <p>[ScrollDown to know more]</p> */}
         </div>
       </div>
       <br />
